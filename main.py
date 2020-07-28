@@ -11,8 +11,8 @@ camp_s = 0
 actions = []
 step = 'd'
 print(exception)
-print('Step:\ns to start\nm for normal\nj for camp\nx for camp but no fight\nn for encounter\nb for return to beginning'
-      '\ne to exit')
+print('Step:\ns to start\n\' \' for normal\nj for camp\nx for camp but no fight\nn for encounter\n'
+      'b for return to beginning\ne to exit')
 while total_moral > -30:
     steps = input()
     for step in steps:
@@ -25,7 +25,7 @@ while total_moral > -30:
         actions.append(step)
         if step == 'b':
             total_moral -= 3
-        if step == 'm':
+        if step == ' ':
             total_moral -= per_tile
         if step == 'j':
             total_moral -= per_encounter
@@ -49,10 +49,10 @@ while total_moral > -30:
             encounter =+ 1
         if step == 'e':
             steps_n += 1
+            break
         if step == 's':
             steps_n += 1
             #print(total_moral,steps_n)
-            break
         steps_n += 1
     if step == 'e':
         break
@@ -60,7 +60,7 @@ while total_moral > -30:
 for moves in actions:
     if moves == 's':
         print('Start', end=',')
-    if moves == 'm':
+    if moves == ' ':
         print('Normal tile', end=',')
     if moves == 'j':
         print('Camp tile', end=',')
@@ -75,4 +75,3 @@ for moves in actions:
     if moves == 'd':
         print('ded lol', end='\n')
 print('\nMoral Left:{}\nSteps taken:{}\nCamp done:{}'.format(total_moral,steps_n,flag))
-#trial : https://gist.github.com/bc29de4f27382a1dba2a19bd8af75a81
