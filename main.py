@@ -1,8 +1,8 @@
 print('Enter The path one tile at a time')
 per_encounter = 7
 per_tile = 1
-exception = 'Fights that occur on tiles where camping is unavailable (i.e. not at corners or intersections)\n ' \
-            'Do remember to go to beginning to exit'
+exception = 'Moral is consumed at Fights that occur on tiles where camping is unavailable ' \
+            '(i.e. not at corners or intersections)\nDo remember to go to beginning to exit'
 total_moral = 70
 flag = False
 steps_n = 0
@@ -27,7 +27,7 @@ while total_moral > -30:
             total_moral -= 3
         if step == ' ':
             total_moral -= per_tile
-        if step == 'j':
+        if step == 'c':
             total_moral -= per_encounter
             total_moral -= 1
             camp_s += 1
@@ -51,8 +51,9 @@ while total_moral > -30:
             steps_n += 1
             break
         if step == 's':
-            steps_n += 1
+            #steps_n += 1
             #print(total_moral,steps_n)
+            pass
         steps_n += 1
     if step == 'e':
         break
@@ -62,7 +63,7 @@ for moves in actions:
         print('Start', end=',')
     if moves == ' ':
         print('Normal tile', end=',')
-    if moves == 'j':
+    if moves == 'c':
         print('Camp tile', end=',')
     if moves == 'j':
         print('Camp tile no encounter', end=',')
@@ -75,3 +76,4 @@ for moves in actions:
     if moves == 'd':
         print('ded lol', end='\n')
 print('\nMoral Left:{}\nSteps taken:{}\nCamp done:{}'.format(total_moral,steps_n,flag))
+print(len(actions))
