@@ -1,0 +1,26 @@
+Journal:
+s to start
+' ' for normal
+c for camp
+x for camp but no fight
+n for encounter
+b for return to beginning
+e to exit
+
+vera route:s   n n     n n n  n nnb
+
+ragix route:s   n n   n    n  n  nnb
+
+executioner:s n n n     n n n n  nnb
+
+juveel:s n n  n n     n n n nn
+
+queen:s n n  n   n n n n n  nb
+
+vera+ragix:s   n n     n n n  n nnb   x n   n    n  n  nnb   this x is the intersection between them
+
+
+
+
+
+test execution route:s               cccccnnbe
