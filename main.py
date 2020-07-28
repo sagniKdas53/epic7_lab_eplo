@@ -1,7 +1,8 @@
 print('Enter The path one tile at a time')
 per_encounter = 7
 per_tile = 1
-exception = 'Fights that occur on tiles where camping is unavailable (i.e. not at corners or intersections)'
+exception = 'Fights that occur on tiles where camping is unavailable (i.e. not at corners or intersections)\n ' \
+            'Do remember to go to beginning to exit'
 total_moral = 70
 flag = False
 steps_n = 0
@@ -10,7 +11,8 @@ camp_s = 0
 actions = []
 step = 'd'
 print(exception)
-print('Step:\ns to start\nm for normal\nj for camp\nx for camp but no fight\nn for encounter\nb for return to beginning\ne to exit')
+print('Step:\ns to start\nm for normal\nj for camp\nx for camp but no fight\nn for encounter\nb for return to beginning'
+      '\ne to exit')
 while total_moral > -30:
     steps = input()
     for step in steps:
@@ -46,7 +48,6 @@ while total_moral > -30:
             total_moral -= per_encounter
             encounter =+ 1
         if step == 'e':
-            total_moral -= 3
             steps_n += 1
         if step == 's':
             steps_n += 1
