@@ -11,7 +11,7 @@ camp_s = 0
 actions = []
 step = 'd'
 print(exception)
-print('Step:\ns to start\n\' \' for normal\nj for camp\nx for camp but no fight\nn for encounter\n'
+print('Journal:\ns to start\n\' \' for normal\nj for camp\nx for camp but no fight\nn for encounter\n'
       'b for return to beginning\ne to exit')
 while total_moral > -30:
     steps = input()
@@ -76,4 +76,4 @@ for moves in actions:
     if moves == 'd':
         print('ded lol', end='\n')
 print('\nMoral Left:{}\nSteps taken:{}\nCamp done:{}'.format(total_moral,steps_n,flag))
-print(len(actions))
+#print(len(actions))

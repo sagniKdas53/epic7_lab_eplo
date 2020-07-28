@@ -1,0 +1,27 @@
+Enter The path one tile at a time
+Moral is consumed at Fights that occur on tiles where camping is unavailable (i.e. not at corners or intersections)
+Do remember to go to beginning to exit
+Step:
+s to start
+' ' for normal
+j for camp
+x for camp but no fight
+n for encounter
+b for return to beginning
+e to exit
+s   c n x   n n n  n cnb   x n   n x  n  n  cn
+59
+49
+5
+-9
+Camp Moral33
+4
+-24
+Caution
+Start,Normal tile,Normal tile,Normal tile,Camp tile,Normal tile,encounter,Normal tile,Normal tile,Normal tile,Normal tile,encounter,Normal tile,encounter,Normal tile,encounter,Normal tile,Normal tile,encounter,Normal tile,Camp tile,encounter,move to beginning,Normal tile,Normal tile,Normal tile,Normal tile,encounter,Normal tile,Normal tile,Normal tile,encounter,Normal tile,Normal tile,Normal tile,encounter,Normal tile,Normal tile,encounter,Normal tile,Normal tile,Camp tile,encounter,
+Moral Left:-31
+Steps taken:46
+Camp done:True
+46
+
+Process finished with exit code 0
