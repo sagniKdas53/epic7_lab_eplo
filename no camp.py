@@ -11,7 +11,7 @@ camp_s = 0
 actions = []
 step = 'd'
 print(exception)
-print('Journal:\ns to start\n\' \' for normal\nj for camp\nx for camp but no fight\nn for encounter\n'
+print('Journal:\ns to start\n\' \' for normal\nc for camp\nx for camp but no fight\nn for encounter\n'
       'b for return to beginning\ne to exit')
 morae = input('Camp Moral:')
 morae = int(morae)
@@ -64,5 +64,5 @@ for moves in actions:
         print('exit', end='\n')
     if moves == 'd':
         print('ded lol', end='\n')
-print('\nMoral Left:{}\nSteps taken:{}\nCamp done:{}'.format(total_moral,steps_n,flag))
-#print(len(actions))
+print('\nMoral Left:{}\nSteps taken:{}\nCamp done:{}'.format(total_moral, steps_n, flag))
+# print(len(actions))

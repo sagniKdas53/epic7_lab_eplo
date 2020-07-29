@@ -16,7 +16,7 @@ print('Journal:\ns to start\n\' \' for normal\nj for camp\nx for camp but no fig
 while total_moral > -30:
     steps = input()
     for step in steps:
-        #print(step)
+        # print(step)
         if total_moral < -20:
             print('Caution')
         if total_moral < -30:
@@ -46,13 +46,13 @@ while total_moral > -30:
                 flag = True
         if step == 'n':
             total_moral -= per_encounter
-            encounter =+ 1
+            encounter = + 1
         if step == 'e':
             steps_n += 1
             break
         if step == 's':
-            #steps_n += 1
-            #print(total_moral,steps_n)
+            # steps_n += 1
+            # print(total_moral,steps_n)
             pass
         steps_n += 1
     if step == 'e':
@@ -75,5 +75,5 @@ for moves in actions:
         print('exit', end='\n')
     if moves == 'd':
         print('ded lol', end='\n')
-print('\nMoral Left:{}\nSteps taken:{}\nCamp done:{}'.format(total_moral,steps_n,flag))
-#print(len(actions))
+print('\nMoral Left:{}\nSteps taken:{}\nCamp done:{}'.format(total_moral, steps_n, flag))
+# print(len(actions))
