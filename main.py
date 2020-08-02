@@ -51,8 +51,8 @@ while total_moral > -30:
             steps_n += 1
             break
         if step == 's':
-            # steps_n += 1
-            # print(total_moral,steps_n)
+            # n_steps += 1
+            # print(totalmoral,n_steps)
             pass
         steps_n += 1
     if step == 'e':

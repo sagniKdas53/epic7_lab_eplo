@@ -61,18 +61,5 @@ def working(stepss, totalmoral, camp, full):
         return '\nMoral Left:{}\nSteps taken:{}\nEncounters:{}\nCamp done:{}\nActions;{}'.format(totalmoral, n_steps,
                                                                                                  enc, flagcamp,
                                                                                                  actions_e)
-
-
-
-print('Enter The path one tile at a time')
-exception = 'Moral is consumed at Fights that occur on tiles where camping is unavailable ' \
-            '(i.e. not at corners or intersections)\nDo remember to go to beginning to exit'
-total_moral = 70
-print(exception)
-print('Journal:\ns to start\n\' \' for normal\nc for camp\nx for camp but no fight\nn for encounter\n'
-      'b for return to beginning\ne to exit')
-mora_l = input('Camp Moral:')
-mora_l = int(mora_l)
-steps = input('Enter the steps\n')
-print(working(steps, total_moral, mora_l, True))
-# print(len(actions))
+# print(working('s   c n x   n n n  n cnb   x n   n x  n  n  cn', 70, 40, False))
+# print(working('s   c n x   n n n  n cnb   x n   n x  n  n  cn', 70, 40, True))
