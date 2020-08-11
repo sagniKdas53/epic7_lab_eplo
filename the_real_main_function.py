@@ -1,5 +1,8 @@
 # (steps, totalmoral, campspots, n_steps, encounter, mora_l, flag_camp, False)
-def working(stepss, totalmoral, camp, full):
+def working(stepss, camp, full):
+    assert type(stepss) == str, "Path must be entered as a string"
+    assert type(camp) == int, "It can either be an integer"
+    assert type(full) == bool, "It can either be True or False"
     actions = []
     actions_e = []
     enc = 0
@@ -8,6 +11,7 @@ def working(stepss, totalmoral, camp, full):
     flagcamp = True
     per_encounter = 7
     per_tile = 1
+    totalmoral = 70
     totalmoral += camp
     for step in stepss:
         if totalmoral < -20:
@@ -61,18 +65,5 @@ def working(stepss, totalmoral, camp, full):
         return '\nMoral Left:{}\nSteps taken:{}\nEncounters:{}\nCamp done:{}\nActions;{}'.format(totalmoral, n_steps,
                                                                                                  enc, flagcamp,
                                                                                                  actions_e)
-
-
-
-print('Enter The path one tile at a time')
-exception = 'Moral is consumed at Fights that occur on tiles where camping is unavailable ' \
-            '(i.e. not at corners or intersections)\nDo remember to go to beginning to exit'
-total_moral = 70
-print(exception)
-print('Journal:\ns to start\n\' \' for normal\nc for camp\nx for camp but no fight\nn for encounter\n'
-      'b for return to beginning\ne to exit')
-mora_l = input('Camp Moral:')
-mora_l = int(mora_l)
-steps = input('Enter the steps\n')
-print(working(steps, total_moral, mora_l, True))
-# print(len(actions))
+# print(working('s   c n x   n n n  n cnb   x n   n x  n  n  cn', 70, 40, False))
+# print(working('s   c n x   n n n  n cnb   x n   n x  n  n  cn', 70, 40, True))

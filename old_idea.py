@@ -1,3 +1,5 @@
+# this was supposes to the main one but in retrospect i have decided that this is too much of a hassle
+# the direct file is the one which works now i haven't removed it yet just for the sake of keeping
 print('Enter The path one tile at a time')
 per_encounter = 7
 per_tile = 1
